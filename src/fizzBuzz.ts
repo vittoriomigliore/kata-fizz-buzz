@@ -5,7 +5,10 @@ class FizzBuzz {
     if (value % 3 == 0 || valueArray.includes("3")) {
       fizzBuzz += "Fizz";
     }
-    if (value % 5 == 0 || valueArray.includes("5")) {
+    if (valueArray.includes("5")) {
+      fizzBuzz += "Buzz";
+    }
+    if (value % 5 == 0) {
       fizzBuzz += "Buzz";
     }
     if (fizzBuzz.length > 0) {
