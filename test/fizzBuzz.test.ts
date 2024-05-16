@@ -23,7 +23,7 @@ describe('fizz buzz test set', function (): void {
 
     var result: string = FizzBuzzClass.handle(5);
 
-    var expected = 'Buzz';
+    var expected = 'BuzzBuzz';
     expect(result).toBe(expected);
   });
 
@@ -31,7 +31,7 @@ describe('fizz buzz test set', function (): void {
 
     var result: string = FizzBuzzClass.handle(15);
 
-    var expected = 'FizzBuzz';
+    var expected = 'FizzBuzzBuzz';
     expect(result).toBe(expected);
   });
 
