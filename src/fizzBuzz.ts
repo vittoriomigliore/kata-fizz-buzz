@@ -1,15 +1,22 @@
 class FizzBuzz {
   private readonly dictionary: { [key: number]: string } = {
     0: "Fizz",
-    1: "Buzz"
+    1: "Buzz",
   };
 
   handle(value: number): string {
     var result = "";
+    var digits: string[] = value.toString().split("");
     if (this.isDividableBy3(value)) {
       result += this.dictionary[0];
     }
+    if (digits.includes("3")) {
+      result += this.dictionary[0];
+    }
     if (this.isDividableBy5(value)) {
+      result += this.dictionary[1];
+    }
+    if (digits.includes("5")) {
       result += this.dictionary[1];
     }
     if (result.length > 0) {
