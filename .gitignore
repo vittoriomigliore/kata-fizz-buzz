@@ -1,2 +1,4 @@
 node_modules
 kata-fizz-buzz.code-workspace
+.vscode
+build
