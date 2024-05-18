@@ -1,5 +1,10 @@
 class FizzBuzz {
-  private readonly dictionary: string[] = ["Fizz", "Buzz", "FizzBuzz"];
+  private readonly dictionary: { [key: number]: string } = {
+    0: "Fizz",
+    1: "Buzz",
+    2: "FizzBuzz",
+  };
+
   handle(value: number): string {
     var result = "1";
     var index =
@@ -10,8 +15,8 @@ class FizzBuzz {
         : this.isDividableBy3(value)
         ? 0
         : -1;
-    if (index != -1){
-        result = this.dictionary[index]
+    if (index != -1) {
+      result = this.dictionary[index];
     }
     return result;
   }
