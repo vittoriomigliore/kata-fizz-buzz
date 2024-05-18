@@ -1,7 +1,7 @@
 class FizzBuzz {
-    handle(): boolean {
-        return true;
-    }
+  handle(value: number): string {
+    return "1";
+  }
 }
 
 export default FizzBuzz;
