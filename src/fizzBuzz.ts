@@ -1,6 +1,10 @@
 class FizzBuzz {
   handle(value: number): string {
-    return "1";
+    var result = "1";
+    if(value%3 == 0){
+        result = "Fizz"
+    }
+    return result;
   }
 }
 
