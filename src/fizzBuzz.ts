@@ -15,7 +15,7 @@ class FizzBuzz {
     if (result.length > 0) {
       return result;
     }
-    return "1";
+    return value.toString();
   }
 
   private isDividableBy5(value: number) {

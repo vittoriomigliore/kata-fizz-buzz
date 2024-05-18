@@ -11,6 +11,22 @@ describe('fizz buzz test set', function (): void {
     expect(result).toBe(expected);
   });
 
+  it('test 4', (): void => {
+
+    var result: string = FizzBuzzClass.handle(4);
+
+    var expected = '4';
+    expect(result).toBe(expected);
+  });
+
+  it('test 7', (): void => {
+
+    var result: string = FizzBuzzClass.handle(7);
+
+    var expected = '7';
+    expect(result).toBe(expected);
+  });
+
   it('test 3', (): void => {
 
     var result: string = FizzBuzzClass.handle(3);
