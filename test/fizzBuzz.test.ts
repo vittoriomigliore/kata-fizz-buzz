@@ -31,7 +31,7 @@ describe('fizz buzz test set', function (): void {
 
     var result: string = FizzBuzzClass.handle(3);
 
-    var expected = 'Fizz';
+    var expected = 'FizzFizz';
     expect(result).toBe(expected);
   });
 
@@ -39,7 +39,7 @@ describe('fizz buzz test set', function (): void {
 
     var result: string = FizzBuzzClass.handle(5);
 
-    var expected = 'Buzz';
+    var expected = 'BuzzBuzz';
     expect(result).toBe(expected);
   });
 
@@ -47,7 +47,31 @@ describe('fizz buzz test set', function (): void {
 
     var result: string = FizzBuzzClass.handle(15);
 
+    var expected = 'FizzBuzzBuzz';
+    expect(result).toBe(expected);
+  });
+
+  it('test 53', (): void => {
+
+    var result: string = FizzBuzzClass.handle(53);
+
     var expected = 'FizzBuzz';
+    expect(result).toBe(expected);
+  });
+
+  it('test 35', (): void => {
+
+    var result: string = FizzBuzzClass.handle(35);
+
+    var expected = 'FizzBuzzBuzz';
+    expect(result).toBe(expected);
+  });
+
+  it('test 135', (): void => {
+
+    var result: string = FizzBuzzClass.handle(135);
+
+    var expected = 'FizzFizzBuzzBuzz';
     expect(result).toBe(expected);
   });
 
